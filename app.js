@@ -1,4 +1,14 @@
-class AwesomeBooks{
+class AwesomeBooks {
+  btn;
+  bookList;
+  awesomeBook;
+
+  constructor() {
+    this.awesomeBook = document.querySelector('.book');
+    this.awesomeBook.style.display = 'none';
+    this.btn = document.querySelector('.btn-submit');
+    this.bookList = [];
+  }
 
   
 }
