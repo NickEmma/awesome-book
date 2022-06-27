@@ -12,6 +12,8 @@ function uploadData(book) {
   localStorage.setItem('bookInfo', JSON.stringify(book));
 }
 
+/* eslint-disable no-use-before-define */
+
 function downloadData() {
   books = JSON.parse(localStorage.getItem('bookInfo'));
   updateUI();
