@@ -11,21 +11,26 @@
     <header>
       <h1>Awesome Books</h1>
     </header>
-    <div class="book"></div>
-    <form>
-      <label for="title">
-        <input id="title" name="title" placeholder="Title" type="text" />
-      </label>
-      <br />
-      <br />
-      <label for="author">
-        <input id="author" name="author" placeholder="Author" type="text" />
-      </label>
-      <br />
-      <br />
-      <button class="btn-submit" type="submit">Add</button>
-    </form>
-
+    <div class="book">
+      <ul id= 'book-list'></ul>
+    </div>
+    <section>
+      <hr>
+      <h2>Add a new Book</h2>
+      <form>
+          <label for="title">
+          <input id="title" name="title" placeholder="Title" type="text" />
+        </label>
+        <br />
+        <br />
+        <label for="author">
+          <input id="author" name="author" placeholder="Author" type="text" />
+        </label>
+        <br />
+        <br />
+        <button class="btn-submit" type="submit">Add</button>
+      </form>
+  </section>
     <script src="app.js"></script>
   </body>
 </html>
