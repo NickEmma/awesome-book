@@ -8,7 +8,11 @@
 - CSS
 - Javascript
 
-To get a local copy up and running follow these simple example steps.
+## To get a local copy up and running follow these simple example steps.
+- Clone this repo to your machine by using Git clone: Git clone https://github.com/NickEmma/awesome-book
+- open in your vs code terminal and run live server
+
+
 
 ## Authors
 
