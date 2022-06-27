@@ -8,25 +8,25 @@ if (!localStorage.getItem('bookInfo')) {
 }
 let books;
 
-function uploadData(book) {
+function saveBooks(book) {
   localStorage.setItem('bookInfo', JSON.stringify(book));
 }
 
 /* eslint-disable no-use-before-define */
 
-function downloadData() {
+function displayBookData() {
   books = JSON.parse(localStorage.getItem('bookInfo'));
   updateUI();
 }
-downloadData();
+displayBookData();
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
   if (title.value && author.value) {
     const obj = { title: title.value, author: author.value };
     books.push(obj);
-    uploadData(books);
-    downloadData();
+    saveBooks(books);
+    displayBookData();
     title.value = '';
     author.value = '';
   }
@@ -50,6 +50,6 @@ function updateUI() {
 
 function removeBook() {
   books.splice(this, 1);
-  uploadData(books);
-  downloadData();
+  saveBooks(books);
+  displayBookData();
 }

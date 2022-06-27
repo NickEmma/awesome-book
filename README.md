@@ -20,9 +20,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Rose Okpe**
 
-- GitHub: [@githubhandle](https://github.com/rose-okpe)
-- Twitter: [@twitterhandle](https://twitter.com/_roseokpe)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/roseokpe-a03b3b239/)
+- GitHub: [@RoseOkpe](https://github.com/roseokpe)
+- Twitter: [@roseokpe](https://twitter.com/roseokpe)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/roseokpe-0334b5177//)
 
 ## 🤝 Contributing
 
