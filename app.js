@@ -1,37 +1,53 @@
 const bookAdd = document.querySelector('.book');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
-const btn = document.querySelector('.submit');
+const btn = document.querySelector('.btn-submit');
 
-const collection = [];
+if (!localStorage.getItem('bookInfo')) {
+  localStorage.setItem('bookInfo', JSON.stringify([]));
+}
+let books;
+
+function uploadData(book) {
+  localStorage.setItem('bookInfo', JSON.stringify(book));
+}
+
+function downloadData() {
+  books = JSON.parse(localStorage.getItem('bookInfo'));
+  updateUI();
+}
+downloadData();
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
   if (title.value && author.value) {
     const obj = { title: title.value, author: author.value };
-    collection.push(obj);
-    updateUI(collection);
+    books.push(obj);
+    uploadData(books);
+    downloadData();
     title.value = '';
     author.value = '';
   }
 });
 
-const updateUI = () => {
+function updateUI() {
   bookAdd.innerHTML = '';
-  collection.forEach((data, index) => {
+  books.forEach((data, index) => {
     const classBook = document.createElement('div');
     classBook.classList.add('class-book');
-    const para = document.createElement('p');
-    para.textContent = `${data.title} By ${data.author}`;
-    const button = document.createElement('button');
-    button.textContent = `Remove`;
-    button.addEventListener('click', removeBook.bind(index));
-    classBook.appendChild(para);
-    classBook.appendChild(button);
+    const par = document.createElement('p');
+    par.textContent = `${data.title} By ${data.author}`;
+    const btnRemove = document.createElement('button');
+    btnRemove.textContent = 'Remove';
+    btnRemove.addEventListener('click', removeBook.bind(index));
+    classBook.appendChild(par);
+    classBook.appendChild(btnRemove);
     bookAdd.appendChild(classBook);
   });
-};
-const removeBook = function () {
-  collection.splice(this, 1);
-  updateUI(collection);
-};
+}
+
+function removeBook() {
+  books.splice(this, 1);
+  uploadData(books);
+  downloadData();
+}
