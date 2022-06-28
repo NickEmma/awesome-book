@@ -53,8 +53,8 @@ td {
 
 .delete {
   display: inline-block;
-  border: 0.2rem solid grey; 
-  color: black;
+  border: 0.2rem solid #b3b3b3;
+  color: #000;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 3px;
