@@ -1,6 +1,7 @@
 # awesome-books
 
 > A plain javascript project that can keep track of a list of books utilizing localStorage.
+> In this milestone, we refactored the Awesome books application to use JavaScript classes.
 
 ## Built With
 
