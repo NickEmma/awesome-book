@@ -1,4 +1,93 @@
-html {
-  outline: none;
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #68eacc 0%, #4978e8 100%);
+}
+.container {
+  width: 100%;
+  background: #fff;
+  max-width: 450px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff7f50;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.tab {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid green;
+  margin: 5px;
+}
+
+th {
+  color: brown;
+  font-size: 1.5rem;
+}
+
+td {
+  color: blue;
+  font-size: 1.1rem;
+}
+
+.delete {
+  display: inline-block;
+  border: 0.2rem solid red;
+  color: #fff;
+  cursor: pointer;
+  background: crimson;
+  font-size: 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.bokk {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#book-list {
+  background: #f2f2f2;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 5px 10px;
+  text-align: start;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  padding: 10px 15px;
 }
