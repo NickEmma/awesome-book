@@ -29,6 +29,10 @@
 - Twitter: [@roseokpe](https://twitter.com/roseokpe)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/roseokpe-0334b5177//)
 
+### LIVE DEMO
+
+Check the live demo here [Awesome Book](https://nickemma.github.io/awesome-book/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
