@@ -20,6 +20,8 @@ body {
   max-width: 450px;
   margin: 20px auto;
   border-radius: 5px;
+  padding-bottom: 10px;
+  display: block;
 }
 
 h1 {
@@ -39,6 +41,7 @@ h1 {
   border-radius: 5px;
   border: 2px solid #000;
   margin: 5px;
+  padding-bottom: 10px;
 }
 
 th {
@@ -63,7 +66,7 @@ td {
 
 .bokk {
   text-align: end;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -71,10 +74,25 @@ td {
   padding: 30px;
 }
 
+form {
+  border: 2px solid #fff;
+  padding: 20px;
+  width: 450px;
+  margin: 0 auto;
+}
+
 h2 {
   margin-bottom: 10px;
   color: red;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input {
@@ -104,14 +122,14 @@ header {
   padding: 0;
   display: inline-flex;
   padding-left: 10px;
-} 
+}
 
 .list a {
   flex-direction: column;
   padding-right: 25px;
   color: #fff;
   text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'poppins', sans-serif;
 }
 
 .logo {
@@ -122,16 +140,15 @@ header {
 .logo a {
   font-size: 20px;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
 }
 
-#new-book {
-  display: none;
-}
-
-.contact {
-  display: none;
+.year {
+  color: #ff7f50;
+  margin: 10px 10px 0 0;
+  font-size: 1.2rem;
+  text-align: end;
 }
 
 .contact {
@@ -139,6 +156,7 @@ header {
   padding-top: 2%;
   padding-bottom: 2%;
   line-height: 9vh;
+  display: none;
 }
 
 footer {
