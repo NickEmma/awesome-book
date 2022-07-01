@@ -186,7 +186,7 @@ footer h2 {
     padding-top: 0;
     display: block;
   }
-  
+
   h1 {
     font-size: 2rem;
     color: #ff7f50;
@@ -194,15 +194,15 @@ footer h2 {
     text-align: center;
     padding-top: 20px;
   }
-  
+
   form {
     width: 600px;
   }
-  
+
   footer {
     width: 100%;
   }
-  
+
   footer h2 {
     font-size: 24px;
   }
