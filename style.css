@@ -15,9 +15,8 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 275px;
   background: #fff;
-  max-width: 450px;
   margin: 20px auto;
   border-radius: 5px;
   padding-bottom: 10px;
@@ -25,11 +24,10 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ff7f50;
-  font-weight: bolder;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 .tab {
@@ -71,13 +69,14 @@ td {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 30px;
+  padding-top: 30px;
+  width: 100%;
 }
 
 form {
   border: 2px solid #fff;
   padding: 20px;
-  width: 450px;
+  max-width: 275px;
   margin: 0 auto;
 }
 
@@ -162,7 +161,7 @@ header {
 footer {
   display: flex;
   background: gray;
-  height: 52px;
+  height: 60px;
   font-size: 9px;
   position: fixed;
   bottom: 0;
@@ -173,4 +172,38 @@ footer {
 
 footer h2 {
   color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    width: 470px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    display: block;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #ff7f50;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  form {
+    width: 600px;
+  }
+  
+  footer {
+    width: 100%;
+  }
+  
+  footer h2 {
+    font-size: 24px;
+  }
 }
